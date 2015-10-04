@@ -1,9 +1,4 @@
-### Example user template template
-### Example user template
+# .gitignore standard file for ICS Software Engineering, Fall 2015
 
-# IntelliJ project files
-.idea
 *.iml
-out
-gen
-# Created by .ignore support plugin (hsz.mobi)
+.idea/

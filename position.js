@@ -1,10 +1,14 @@
 /**
  * Created by mike on 9/23/2015.
  */
-var nums = _.sortBy([2, 6, 4, 3, 7, 9]);
+/* exported position, testnums*/
 
-console.log(nums);
-
+/**
+ * Finds the postioin in array of nums where num should be inserted
+ * @param nums the array of numbers
+ * @param num the number to be inserted
+ * @returns {number} the position where it should be
+ */
 function position(nums, num) {
   var cursor = 0;
   while ((nums[cursor] <= num) && (cursor < nums.length)) {
@@ -16,7 +20,3 @@ function position(nums, num) {
   return cursor;
 }
 
-var testnums[1,3,5,6];
-console.log("six: " + position(nums, 6));
-console.log("2: " + position(nums, 2));
-console.log("10: " + position(nums, 10));
